@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #FCFCFC;
+}
+
+/** navbar **/
+.navbar {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+    padding: 17px;
+    
+}
+
+.nav {
+    font-weight: bold;
+    text-shadow: 5px 5px 4px #9d83ad;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #9365AF;
+}
+
+.menu {
+    font-weight: bold;
+    font-size: 15px;
+    padding: 9px 20px;
+    background-color: #9365AF;
+    border-radius: 20px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu:hover {
+    background-color: #EF5756;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/** hero **/
+.hero {
+    position: relative;
+    font-family: 'Lato', sans-serif;
+}
+
+.title-insure {
+    position: absolute;
+    font-size: 2rem;
+    top: 6rem;
+    left: 20rem;
+    font-weight: bold;
+    width: 25rem;
+    color: #591679;
+}
+
+.body-insure {
+    color: #b4a9a9;
+    position: absolute;
+    top: 13rem;
+    width: 25rem;
+    font-weight: bold;
+    left: 20rem;
+}
+
+.car-d {
+    width: 45rem;
+    position: absolute;
+    left: 30rem;
+    top: 1rem;
+    border-radius: 15rem 5rem;
+}
+
+.btn-cp {
+    position: absolute;
+    top: 20rem;
+    left: 20rem;
+    padding: 9px 20px;
+    background-color: #EF5756;
+    border-radius: 20px;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+.btn-cp a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-cp:hover {
+    opacity: 1;
+    transition: 0.5s;
+    background-color: #25A66C;
+    cursor: pointer;
+}
+
+.insure-comp {
+    position: absolute;
+    top: 35rem;
+    left: 15rem;
+    font-weight: bold;
+}
+
+p.title {
+    font-size: 1.5rem;
+    color: #591679;
+}
+
+p.body {
+    color: #9e8c8c;
+}
