@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Lato:ital,wght@0,100;0,300;0,400;1,900&display=swap');
 
 body {
     padding: 0;
     margin: 0;
     background-color: #FCFCFC;
+    overflow-x: hidden;
 }
 
 /** navbar **/
@@ -14,7 +15,6 @@ body {
     font-size: 22px;
     font-family: 'Lato', sans-serif;
     padding: 17px;
-    
 }
 
 .nav {
@@ -41,7 +41,7 @@ body {
 }
 
 .menu:hover {
-    background-color: #EF5756;
+    background-color: #F48D8D;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -53,7 +53,7 @@ body {
 }
 
 .title-insure {
-    position: absolute;
+    position: relative;
     font-size: 2rem;
     top: 6rem;
     left: 20rem;
@@ -64,8 +64,8 @@ body {
 
 .body-insure {
     color: #b4a9a9;
-    position: absolute;
-    top: 13rem;
+    position: relative;
+    top: 5rem;
     width: 25rem;
     font-weight: bold;
     left: 20rem;
@@ -75,16 +75,15 @@ body {
     width: 45rem;
     position: absolute;
     left: 30rem;
-    top: 1rem;
     border-radius: 15rem 5rem;
-    box-shadow: 10px 10px 2px #EF5756;
+    box-shadow: 8px 5px 2px #F48D8D;
 }
 
 .btn-cp {
     position: absolute;
-    top: 20rem;
+    top: 17rem;
     left: 20rem;
-    padding: 9px 20px;
+    padding: 9px 25px;
     background-color: #EF5756;
     border-radius: 20px;
     font-weight: bold;
@@ -105,16 +104,114 @@ body {
 
 .insure-comp {
     position: absolute;
+    text-align: center;
     top: 35rem;
-    left: 15rem;
     font-weight: bold;
+    background-color: #E9F5F0;
+    height: 7rem;
+    width: 90rem;
 }
 
 p.title {
     font-size: 1.5rem;
     color: #591679;
+    font-weight: bold;
 }
 
 p.body {
-    color: #9e8c8c;
+    color: #918a8a;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+hr {
+    border: 1px solid #25A66C;
+}
+
+.ico img {
+    width: 70px;
+}
+
+.ico img:hover {
+    transform: translate(5px, 5px);
+    transition: 0.5s;
+    box-shadow: 5px 5px 1px;
+    cursor: pointer;
+}
+
+.ico {
+    width: 200px;
+    text-align: center;
+    color: #918a8a;
+    font-weight: bold;
+}
+
+.steps {
+    margin-top: 800px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.step p {
+    font-size: 3rem;
+    width: 400px;
+    color: #3E0F52;
+    font-family: 'Contrail One', cursive;
+    font-weight: bold;
+}
+
+.step p::first-letter {
+    font-weight: bold;
+    font-size: 4rem;
+    color: #25A66C;
+}
+
+.items {
+    position: relative;
+    right: 10rem;
+    line-height: 3rem;
+    top: 2rem;
+    font-size: 1rem;
+}
+
+ul {
+    counter-reset: item;
+    list-style: none;
+}
+
+ul li {
+    display: block;
+    position: relative;
+}
+
+ul li:before {
+    content: counter(item);
+    counter-increment: item;
+    color: #fff;
+    padding: 4px 10px;
+    text-align: center;
+    height: 2em;
+    width: 2rem;
+    font-family: 'Contrail One', cursive;
+    line-height: 1em;
+    background: #763B9A;
+    border-radius: 50em;
+    font-weight: 700;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #918a8a;
+    padding: 6px 16px;
+}
+
+.vl {
+    border-left: 1px dotted #000;
+    height: 35px;
+    position: absolute;
+    right: 25rem;
 }
